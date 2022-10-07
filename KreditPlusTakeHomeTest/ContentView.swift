@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var itemFetcher = ItemFetcher()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+      
+        if itemFetcher.isLoading {
+            LoadingView()
+        }else if itemFetcher.errorMessage != nil  {
+            ErrorView(itemFetcher: itemFetcher)
+        }else {
+            ItemListView(items: itemFetcher.items)
         }
-        .padding()
+      
+          
     }
 }
 

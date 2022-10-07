@@ -14,6 +14,18 @@
 		E5224AD128EF4AB50022442A /* KreditPlusTakeHomeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AD028EF4AB50022442A /* KreditPlusTakeHomeTestTests.swift */; };
 		E5224ADB28EF4AB50022442A /* KreditPlusTakeHomeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224ADA28EF4AB50022442A /* KreditPlusTakeHomeTestUITests.swift */; };
 		E5224ADD28EF4AB50022442A /* KreditPlusTakeHomeTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224ADC28EF4AB50022442A /* KreditPlusTakeHomeTestUITestsLaunchTests.swift */; };
+		E5224AEB28EF6D510022442A /* ItemFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AEA28EF6D510022442A /* ItemFetcher.swift */; };
+		E5224AED28EF6DC40022442A /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AEC28EF6DC40022442A /* APIServiceProtocol.swift */; };
+		E5224AEF28EF6DDE0022442A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AEE28EF6DDE0022442A /* APIService.swift */; };
+		E5224AF128EF6DF60022442A /* APIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AF028EF6DF60022442A /* APIMockService.swift */; };
+		E5224AF328EF6E150022442A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AF228EF6E150022442A /* APIError.swift */; };
+		E5224AF728EF712B0022442A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AF628EF712B0022442A /* Item.swift */; };
+		E5224AF928EF71940022442A /* ItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AF828EF71940022442A /* ItemImage.swift */; };
+		E5224AFB28EF73B40022442A /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AFA28EF73B40022442A /* ItemListView.swift */; };
+		E5224AFD28EF73D20022442A /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AFC28EF73D20022442A /* ItemRow.swift */; };
+		E5224AFF28EF73E60022442A /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AFE28EF73E60022442A /* ItemDetailView.swift */; };
+		E5224B0128EF73F50022442A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224B0028EF73F50022442A /* ErrorView.swift */; };
+		E5224B0328EF74060022442A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224B0228EF74060022442A /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,18 @@
 		E5224AD628EF4AB50022442A /* KreditPlusTakeHomeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KreditPlusTakeHomeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5224ADA28EF4AB50022442A /* KreditPlusTakeHomeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KreditPlusTakeHomeTestUITests.swift; sourceTree = "<group>"; };
 		E5224ADC28EF4AB50022442A /* KreditPlusTakeHomeTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KreditPlusTakeHomeTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5224AEA28EF6D510022442A /* ItemFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFetcher.swift; sourceTree = "<group>"; };
+		E5224AEC28EF6DC40022442A /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		E5224AEE28EF6DDE0022442A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E5224AF028EF6DF60022442A /* APIMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMockService.swift; sourceTree = "<group>"; };
+		E5224AF228EF6E150022442A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		E5224AF628EF712B0022442A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E5224AF828EF71940022442A /* ItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImage.swift; sourceTree = "<group>"; };
+		E5224AFA28EF73B40022442A /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		E5224AFC28EF73D20022442A /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		E5224AFE28EF73E60022442A /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		E5224B0028EF73F50022442A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E5224B0228EF74060022442A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +118,9 @@
 		E5224ABE28EF4AB30022442A /* KreditPlusTakeHomeTest */ = {
 			isa = PBXGroup;
 			children = (
+				E5224AF528EF6E960022442A /* view */,
+				E5224AF428EF6E910022442A /* model */,
+				E5224AE928EF4C520022442A /* networking */,
 				E5224ABF28EF4AB30022442A /* KreditPlusTakeHomeTestApp.swift */,
 				E5224AC128EF4AB30022442A /* ContentView.swift */,
 				E5224AC328EF4AB50022442A /* Assets.xcassets */,
@@ -125,6 +152,39 @@
 				E5224ADC28EF4AB50022442A /* KreditPlusTakeHomeTestUITestsLaunchTests.swift */,
 			);
 			path = KreditPlusTakeHomeTestUITests;
+			sourceTree = "<group>";
+		};
+		E5224AE928EF4C520022442A /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				E5224AEA28EF6D510022442A /* ItemFetcher.swift */,
+				E5224AEC28EF6DC40022442A /* APIServiceProtocol.swift */,
+				E5224AEE28EF6DDE0022442A /* APIService.swift */,
+				E5224AF028EF6DF60022442A /* APIMockService.swift */,
+				E5224AF228EF6E150022442A /* APIError.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		E5224AF428EF6E910022442A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E5224AF628EF712B0022442A /* Item.swift */,
+				E5224AF828EF71940022442A /* ItemImage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E5224AF528EF6E960022442A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E5224AFA28EF73B40022442A /* ItemListView.swift */,
+				E5224AFC28EF73D20022442A /* ItemRow.swift */,
+				E5224AFE28EF73E60022442A /* ItemDetailView.swift */,
+				E5224B0028EF73F50022442A /* ErrorView.swift */,
+				E5224B0228EF74060022442A /* LoadingView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +317,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5224AFF28EF73E60022442A /* ItemDetailView.swift in Sources */,
+				E5224AED28EF6DC40022442A /* APIServiceProtocol.swift in Sources */,
+				E5224AEF28EF6DDE0022442A /* APIService.swift in Sources */,
 				E5224AC228EF4AB30022442A /* ContentView.swift in Sources */,
+				E5224AEB28EF6D510022442A /* ItemFetcher.swift in Sources */,
+				E5224B0328EF74060022442A /* LoadingView.swift in Sources */,
+				E5224AF728EF712B0022442A /* Item.swift in Sources */,
+				E5224AFB28EF73B40022442A /* ItemListView.swift in Sources */,
+				E5224AF128EF6DF60022442A /* APIMockService.swift in Sources */,
 				E5224AC028EF4AB30022442A /* KreditPlusTakeHomeTestApp.swift in Sources */,
+				E5224AFD28EF73D20022442A /* ItemRow.swift in Sources */,
+				E5224AF928EF71940022442A /* ItemImage.swift in Sources */,
+				E5224B0128EF73F50022442A /* ErrorView.swift in Sources */,
+				E5224AF328EF6E150022442A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
