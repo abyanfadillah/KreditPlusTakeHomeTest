@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51C9C4E28EFE15300003FE4 /* ItemRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C9C4D28EFE15300003FE4 /* ItemRating.swift */; };
 		E5224AC028EF4AB30022442A /* KreditPlusTakeHomeTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224ABF28EF4AB30022442A /* KreditPlusTakeHomeTestApp.swift */; };
 		E5224AC228EF4AB30022442A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AC128EF4AB30022442A /* ContentView.swift */; };
 		E5224AC428EF4AB50022442A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5224AC328EF4AB50022442A /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		E5224AF128EF6DF60022442A /* APIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AF028EF6DF60022442A /* APIMockService.swift */; };
 		E5224AF328EF6E150022442A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AF228EF6E150022442A /* APIError.swift */; };
 		E5224AF728EF712B0022442A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AF628EF712B0022442A /* Item.swift */; };
-		E5224AF928EF71940022442A /* ItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AF828EF71940022442A /* ItemImage.swift */; };
 		E5224AFB28EF73B40022442A /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AFA28EF73B40022442A /* ItemListView.swift */; };
 		E5224AFD28EF73D20022442A /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AFC28EF73D20022442A /* ItemRow.swift */; };
 		E5224AFF28EF73E60022442A /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5224AFE28EF73E60022442A /* ItemDetailView.swift */; };
@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E51C9C4D28EFE15300003FE4 /* ItemRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRating.swift; sourceTree = "<group>"; };
 		E5224ABC28EF4AB30022442A /* KreditPlusTakeHomeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KreditPlusTakeHomeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5224ABF28EF4AB30022442A /* KreditPlusTakeHomeTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KreditPlusTakeHomeTestApp.swift; sourceTree = "<group>"; };
 		E5224AC128EF4AB30022442A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		E5224AF028EF6DF60022442A /* APIMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMockService.swift; sourceTree = "<group>"; };
 		E5224AF228EF6E150022442A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		E5224AF628EF712B0022442A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		E5224AF828EF71940022442A /* ItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImage.swift; sourceTree = "<group>"; };
 		E5224AFA28EF73B40022442A /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		E5224AFC28EF73D20022442A /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		E5224AFE28EF73E60022442A /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				E5224AF628EF712B0022442A /* Item.swift */,
-				E5224AF828EF71940022442A /* ItemImage.swift */,
+				E51C9C4D28EFE15300003FE4 /* ItemRating.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 				E5224AF128EF6DF60022442A /* APIMockService.swift in Sources */,
 				E5224AC028EF4AB30022442A /* KreditPlusTakeHomeTestApp.swift in Sources */,
 				E5224AFD28EF73D20022442A /* ItemRow.swift in Sources */,
-				E5224AF928EF71940022442A /* ItemImage.swift in Sources */,
+				E51C9C4E28EFE15300003FE4 /* ItemRating.swift in Sources */,
 				E5224B0128EF73F50022442A /* ErrorView.swift in Sources */,
 				E5224AF328EF6E150022442A /* APIError.swift in Sources */,
 			);

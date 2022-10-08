@@ -10,12 +10,12 @@ import SwiftUI
 struct ItemDetailView: View {
     let item: Item
     let imageSize: CGFloat = 300
-    
     var body: some View {
+        let formattedPrice = "$" + String(item.price)
+        let formattedRate = String("✩" + String((item.rating?.rate)!))
         ScrollView {
             VStack {
-                if item.image?.url != nil {
-                    AsyncImage(url: URL(string: item.image!.url!)) { phase in
+                    AsyncImage(url: URL(string: item.image)) { phase in
                         if let image = phase.image {
                             image.resizable()
                                 .scaledToFit()
@@ -33,40 +33,45 @@ struct ItemDetailView: View {
                         }
                         
                     }
-                }else {
-                    Color.gray.frame(height: imageSize)
-                }
                 
                 VStack(alignment: .leading, spacing: 15) {
                     
-                    Text(item.name)
+                    Text(item.title)
                         .font(.headline)
-                    Text(item.temperament)
+                    Text(item.description)
                         .font(.footnote)
-                    Text(item.itemExplaination)
-                    if item.isHairless {
-                        Text("hairless")
-                    }
                     
-                    HStack {
-                        Text("Energy level")
-                        Spacer()
-                        ForEach(1..<6) { id in
-                            Image(systemName: "star.fill")
-                                .foregroundColor(item.energyLevel > id ? Color.accentColor : Color.gray )
+                    VStack {
+                        HStack{
+                            Text("Category")
+                                .font(.headline)
+                            Spacer()
+                            Text(item.category)
+                                .font(.subheadline)
                         }
-                    }
+                        HStack{
+                            Text("Price")
+                                .font(.headline)
+                            Spacer()
+                            Text(formattedPrice)
+                                .font(.subheadline)
+                        }
+                        HStack{
+                            Text("Rating")
+                                .font(.headline)
+                            Spacer()
+                            Text(formattedRate)
+                                .font(.subheadline)
+                        }
+                 
+               
+                        }
+                    
                     
                     Spacer()
                 }.padding()
                     .navigationBarTitleDisplayMode(.inline)
             }
         }
-    }
-}
-
-struct ItemDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemDetailView(item: Item.example1())
     }
 }

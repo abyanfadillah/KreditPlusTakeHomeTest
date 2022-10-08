@@ -25,7 +25,7 @@ class ItemFetcher: ObservableObject {
         isLoading = true
         errorMessage = nil
         
-        let url = URL(string: "https://api.thecatapi.com/v1/breeds")
+        let url = URL(string: "https://fakestoreapi.com/products")
         service.fetchItems(url: url) { [unowned self] result in
             
             DispatchQueue.main.async {
@@ -45,19 +45,5 @@ class ItemFetcher: ObservableObject {
         
     }
     
-    
-    //MARK: preview helpers
-    
-    static func errorState() -> ItemFetcher {
-        let fetcher = ItemFetcher()
-        fetcher.errorMessage = APIError.url(URLError.init(.notConnectedToInternet)).localizedDescription
-        return fetcher
-    }
-    
-    static func successState() -> ItemFetcher {
-        let fetcher = ItemFetcher()
-        fetcher.items = [Item.example1(), Item.example2()]
-        
-        return fetcher
-    }
+
 }

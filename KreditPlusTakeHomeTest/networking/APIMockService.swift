@@ -15,5 +15,4 @@ struct APIMockService: APIServiceProtocol {
         completion(result)
     }
     
-    
 }

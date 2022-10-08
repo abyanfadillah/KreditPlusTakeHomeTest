@@ -13,7 +13,7 @@ struct ErrorView: View {
     var body: some View {
         VStack {
             
-            Text("😿")
+            Text("🛒")
                 .font(.system(size: 80))
             
             Text(itemFetcher.errorMessage ?? "")
@@ -26,11 +26,5 @@ struct ErrorView: View {
 
             
         }
-    }
-}
-
-struct ErrorView_Previews: PreviewProvider {
-    static var previews: some View {
-        ErrorView(itemFetcher: ItemFetcher())
     }
 }

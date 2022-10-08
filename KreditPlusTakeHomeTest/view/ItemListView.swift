@@ -12,11 +12,11 @@ struct ItemListView: View {
     
     @State private var searchText: String = ""
     
-    var filteredBreeds: [Item] {
+    var filteredItems: [Item] {
         if searchText.count == 0 {
           return items
         } else {
-            return items.filter { $0.name.lowercased().contains(searchText.lowercased())
+            return items.filter { $0.title.lowercased().contains(searchText.lowercased())
             }
         }
     }
@@ -24,7 +24,7 @@ struct ItemListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(filteredBreeds) { item in
+                ForEach(filteredItems) { item in
                     NavigationLink {
                         ItemDetailView(item: item)
                     } label: {
@@ -34,15 +34,10 @@ struct ItemListView: View {
                 }
             }
             .listStyle(PlainListStyle())
-            .navigationTitle("Find Your Perfect Cat")
+            .navigationTitle("Best Item For You")
             .searchable(text: $searchText)
             
         }
     }
 }
 
-struct ItemListView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemListView(items: ItemFetcher.successState().items)
-    }
-}
